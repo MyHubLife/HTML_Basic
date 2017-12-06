@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Default form</title>
+</head>
+<body>
+	<table border="2" bordercolor="blue">
+		<tr>
+			<td>Name</td>
+			<td>
+				<input type="text" name="Name" placeholder="Write you name">
+				</input>
+			</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td>
+				<input type="email" name="Email" placeholder="Write you email">
+				</input>
+			</td>
+		</tr>
+		<tr>
+			<td>Phone</td>
+			<td>
+				<input type="text" name="Phone" placeholder="Write you phone">
+				</input>
+			</td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td align="center">
+				Male<input type="radio" name="Gender" value="Male">
+				</input><br>
+				Female<input type="radio" name="Gender" value="Female">
+				</input><br>
+			</td>
+		</tr>
+		<tr>
+			<td>Application form</td>
+			<td align="center">
+				Letter<input type="radio" name="Application form" value="letter">
+				</input><br>
+				Injury<input type="radio" name="Application form" value="injury">
+				</input><br>
+			</td>
+		</tr>
+		<tr>
+			<td>Select you country</td>
+			<td align="center">
+				<select multiple name="Country">
+					<option selected value="0" >Select you country</option>
+					<option value="UA">Ukraine</option>
+					<option value="PL">Poland</option>
+					<option value="CZ">Czech Republic</option>
+					<option value="D">Germany</option>
+					<option value="IT">Italy</option>
+				</select>
+			</td>
+		</tr>
+		<td>Load you CV</td>
+			<td>
+				<input type="file" name="CV">
+				</input>
+			</td>
+		<tr>
+			<td colspan="2" align="center">
+				<textarea name="Message" placeholder="About yourself"></textarea>
+			</td>	
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit"/>
+			</td>
+			<input type="hidden" name="Current date" value="date"/>
+		</tr>
+	</table>
+</body>
+</html>
+
+<!-- Cоздать заголовок и таблицу 5х2 с полями формы. В форме должны быть поля Name, Email, Phone, Message. Поля Message и кнопка отправки данных должны занимать ширину двух столбцов. -->
+<!-- В форму добавить новые элементы: Gender - для выбора пола, и Application For - для выбора типа заявки c несколькими вариантами, которые можно комбинировать -->
+<!-- Добавить в форму выпадающий список для определения страны. По умолчанию должен быть выставлен элемент с текстом Select your country -->
+<!-- Добавить в форму веб документа из предыдущего задания скрытый элемент, который содержит значение даты. -->
+<!-- В форму веб-документа добавить поле для загрузки резюме -->
